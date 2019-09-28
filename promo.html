@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass+Mono|VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <marquee behavior="scroll" direction="left"
@@ -663,6 +667,9 @@
         alt=""
       />
     </div>
+    <div id="left">
+      <span>PROMO STELLÃO</span><br /><span>Comprou 3 ⟿ Levou 4</span>
+    </div>
   </body>
   <style>
     #gif {
@@ -675,11 +682,31 @@
       justify-content: center;
     }
 
+    #left {
+      position: fixed;
+      padding: 0 10px;
+      width: 100vw;
+      height: 200px;
+      background-color: black;
+      top: 400px;
+      font-size: 2.5rem;
+      /* font-family: "VT323", monospace; */
+      font-family: "Overpass Mono", monospace;
+      /* transform: rotateZ(-90deg); */
+    }
+
+    marquee {
+      /* font-family: "VT323", monospace; */
+      font-size: 25px;
+      font-family: "Overpass Mono", monospace;
+    }
+
     * {
-      font-family: monospace;
+      text-transform: uppercase;
     }
 
     body {
+      margin: 0;
       background-color: red;
       color: white;
       font-size: 18px;
